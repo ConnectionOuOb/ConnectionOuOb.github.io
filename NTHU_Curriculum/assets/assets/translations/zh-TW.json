@@ -1,0 +1,12 @@
+{
+  "title": "NTHU 課程查詢系統",
+  "appbar_lang": "語言",
+  "appbar_theme": "主題",
+  "lang_en": "英文",
+  "lang_zh": "中文",
+  "query_basic": "基本查詢",
+  "query_mix": "系級查詢",
+  "query_advanced": "進階查詢",
+  "search_all": "全部",
+  "search_hint": "搜尋"
+}
