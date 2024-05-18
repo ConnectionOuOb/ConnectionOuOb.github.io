@@ -53938,7 +53938,7 @@ A.a1S.prototype={
 X(a){var s=this,r=null,q=A.O(a),p=s.e
 q=A.cl(r,A.aJ6(A.ahV(p,new A.aAP(s),7,r,B.b0),p,5,!0),B.l,q.ay.cy,r,r,r,40,r,r,r)
 p=new A.a9j()
-p.a="pdfs/"+s.f[s.d].b
+p.a="assets/pdfs/"+s.f[s.d].b
 return new A.GV(new A.BL(q,new A.a2v(r,r,1/0,56),r),new A.Hq(p,r),r)}}
 A.aAP.prototype={
 $2(a,b){var s=null,r=this.a,q=r.f[b]
