@@ -3,9 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "d3519fdee6fd51f0c947ab676faaebf8",
-"assets/AssetManifest.bin.json": "60c757e9c08b8ddd05888fcd307a66f1",
-"assets/AssetManifest.json": "3baa4191bbbf27253e4f429bdaaea85e",
+const RESOURCES = {"assets/AssetManifest.bin": "e7b1e0af4d046e5363e8586fd7f94c6e",
+"assets/AssetManifest.bin.json": "64725a32744c75934ad1a81beb87cc83",
+"assets/AssetManifest.json": "e9b5e7e91800b41929b9af28500b7012",
+"assets/assets/images/professor.jpg": "5ad4913b3942533d0169eb763c4cafb9",
 "assets/assets/pdfs/1.pdf": "0ec8032f46f07e26efb1e1afe95732c5",
 "assets/assets/pdfs/2.pdf": "eadab9a484aae3935852d39e0d7b603b",
 "assets/assets/pdfs/3.pdf": "4e5797ab0ce72f981d66b6cbc47cdb8b",
@@ -13,6 +14,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "d3519fdee6fd51f0c947ab676faaebf8
 "assets/assets/pdfs/5.pdf": "8e11f896365781451aba0aafc382a711",
 "assets/assets/pdfs/6.pdf": "f2f7d200971f3df96a1ce15bc9dac119",
 "assets/assets/pdfs/7.pdf": "b9e90c3e0c676422b77a0c339aa0a9a1",
+"assets/assets/pdfs/8.pdf": "3f765b6a962efd600dda7559d1e57343",
 "assets/FontManifest.json": "866b9b20ab0e8c30ffe220d2a2d66abe",
 "assets/fonts/MaterialIcons-Regular.otf": "4afb7962d8bce8c12ce36b2a2ee8eb11",
 "assets/NOTICES": "4821f3ecdf53cbe5c78c26589f209eec",
@@ -39,9 +41,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "d3519fdee6fd51f0c947ab676faaebf8
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "1b607800b927937ebff6f5f73c9aa741",
-"/": "1b607800b927937ebff6f5f73c9aa741",
-"main.dart.js": "960d8ac024d2cb2d16e89a8d6b3e1203",
+"index.html": "5516b25c0f92a90b9b2f68ffd43d8f0f",
+"/": "5516b25c0f92a90b9b2f68ffd43d8f0f",
+"main.dart.js": "b5b04d0ae10f26aac06eaa2e115b372a",
 "manifest.json": "c9d25015d54a351088db977b3476fa23",
 "version.json": "9ae7ecbaa50e9346fa9c670df7deba32"};
 // The application shell files that are downloaded before a service worker can
