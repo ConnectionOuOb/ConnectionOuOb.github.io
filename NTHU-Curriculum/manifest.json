@@ -1,11 +1,11 @@
 {
-    "name": "app",
-    "short_name": "app",
+    "name": "version_1",
+    "short_name": "version_1",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "國立清華大學 課程查詢系統",
+    "description": "NTHU curriculum system version 1",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
