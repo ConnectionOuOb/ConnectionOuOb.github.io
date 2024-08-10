@@ -6,7 +6,7 @@
 Flutter Molecule | [原始碼](https://github.com/ConnectionOuOb/FlutterMol) | [網站](https://connectionouob.github.io/FlutterMol/)
 Resume Generator | [原始碼](https://github.com/ConnectionOuOb/Resume_Generator) | [網站](https://connectionouob.github.io/resume-generator/)
 
-## 黎漢林教授委託教材
+## 委託教材
 名稱 | 原始碼 | 網站
 :---: | :---: | :---:
 PDF 閱讀器 | [原始碼](https://github.com/ConnectionOuOb/PDF_Viewer) | [網站](https://connectionouob.github.io/ebook/)
