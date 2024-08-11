@@ -15,7 +15,7 @@ PDF 閱讀器 | [原始碼](https://github.com/ConnectionOuOb/PDF_Viewer) | [網
 莊子通覽圖 (英文連結) | [原始碼](https://github.com/ConnectionOuOb/Zhuangzi) | [網站](https://connectionouob.github.io/zhuangzi/)
 莊子通覽圖 (中文連結) | [原始碼](https://github.com/ConnectionOuOb/Zhuangzi) | [網站](https://connectionouob.github.io/莊子通覽圖/)
 
-## NTHU Campus as a Living Lab (CLL) 競賽
+## NTHU CLL (Campus as a Living Lab) 競賽
 名稱 | 原始碼 | 網站
 :---: | :---: | :---:
 NTHU Curriculum | [原始碼](https://github.com/NTHU-CLL/NTHU-Curriculum-System/) | [網站](https://connectionouob.github.io/NTHU_Curriculum/)
