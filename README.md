@@ -18,7 +18,7 @@ PDF 閱讀器 | [原始碼](https://github.com/ConnectionOuOb/PDF_Viewer) | [網
 ## NTHU CLL (Campus as a Living Lab) 競賽
 名稱 | 原始碼 | 網站
 :---: | :---: | :---:
-NTHU Curriculum | [原始碼](https://github.com/NTHU-CLL/NTHU-Curriculum-System/) | [網站](https://connectionouob.github.io/NTHU_Curriculum/)
+NTHU Curriculum | [原始碼](https://github.com/NTHU-CLL/NTHU-Curriculum-System/) | [網站](https://connectionouob.github.io/NTHU-Curriculum/)
 
 ## 電競社
 名稱 | 原始碼 | 網站
