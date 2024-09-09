@@ -78,7 +78,7 @@
   "inter_result_semester": "Semester",
   "inter_result_button_list": "List",
   "inter_result_button_table": "Class Schedule",
-  "map_search": "Enter the building or classroom code",
+  "map_search": "Enter the name of the building",
   "map_navigation": "Navigation",
   "map_error_title": "Unable to access your location",
   "map_error_state": "Please turn on GPS on the device\nand click on the navigation button to authorize access to your location",
