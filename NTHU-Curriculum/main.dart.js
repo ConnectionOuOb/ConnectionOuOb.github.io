@@ -130038,7 +130038,7 @@ r($,"bjN","aZD",()=>{var q=new A.arE()
 q.u5($.aZE())
 return q})
 r($,"bwI","aUL",()=>{var q=null
-return A.Bo(q,"140.113.120.230",q,q,59115,q,"https",q)})
+return A.Bo(q,"10.life.nctu.edu.tw",q,q,59115,q,"https",q)})
 r($,"bwL","aUM",()=>$.aUL().R5(0,"/pdf"))
 r($,"bwJ","b_3",()=>$.aUL().R5(0,"/chat"))
 r($,"bwK","b_4",()=>$.aUL().R5(0,"/course"))
