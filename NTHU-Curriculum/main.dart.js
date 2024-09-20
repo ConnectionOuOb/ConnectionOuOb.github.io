@@ -130163,7 +130163,7 @@ r($,"bk_","aZL",()=>{var q=new A.arI()
 q.u6($.aZM())
 return q})
 r($,"bwO","aUQ",()=>{var q=null
-return A.wa(q,"10.life.nctu.edu.tw",q,q,59115,q,"https",q)})
+return A.wa(q,"nthu-cll-backend-240431637182.asia-east1.run.app",q,q,443,q,"https",q)})
 r($,"bwR","aUR",()=>$.aUQ().R6(0,"/pdf"))
 r($,"bwP","b_b",()=>$.aUQ().R6(0,"/chat"))
 r($,"bwQ","b_c",()=>$.aUQ().R6(0,"/course"))
