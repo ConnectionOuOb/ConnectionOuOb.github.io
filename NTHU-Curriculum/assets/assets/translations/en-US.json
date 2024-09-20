@@ -1,4 +1,5 @@
 {
+  "": "",
   "tab_search": "Curriculum Search",
   "tab_rule": "Course Prerequisites",
   "tab_credit": "Credit-Based Program",
@@ -87,6 +88,11 @@
   "timetable_period": "Period",
   "other_no_pdf": "No PDF found",
   "other_no_data": "No data found",
+  "contact_title": "We hope that this system will help.\nPlease feel free to contact us if you need any further information or help.",
+  "contact_name": "your name",
+  "contact_email": "your email address",
+  "contact_content": "write down any suggestions or requests and we will contact you with email address you gave ASAP.",
+  "contact_go": "contact us",
   "(跨領域)奈米與光電半導體產業學分學程": "Nanotechnology and Semiconductor Photonics Industry Program",
   "(跨領域)生物產業技術學分學程": "Biochemical Technology and Bioindustry Program",
   "(跨領域)生物資訊學分學程": "Bioinformatics Program",
