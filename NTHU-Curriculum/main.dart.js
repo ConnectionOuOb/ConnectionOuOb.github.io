@@ -118503,7 +118503,7 @@ A.Se.prototype={
 V(a){var s=t.IB,r=A.a([a.av(s).x,B.dW,B.dX,B.dV],t.a9),q=a.av(s).f
 s=a.av(s).r.a
 s===$&&A.b()
-return A.yq(!1,null,"/",s,r,new A.ah8(),q.d,A.zV(null,B.y,null),"NTHU Curriculum")}}
+return A.yq(!1,null,"/",s,r,new A.ah8(),q.d,A.zV(null,B.y,null),"NTHU Course Finder")}}
 A.ah8.prototype={
 $1(a){var s=a.a,r=A.f8(s==null?"/":s,0,null).gtc(),q=r.length===0?B.b.gT($.BF):B.b.gT(r)
 if(B.b.v($.BF,q))return A.aWq(new A.ah6(q),null,t.z)
