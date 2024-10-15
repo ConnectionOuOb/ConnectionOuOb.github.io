@@ -1,6 +1,6 @@
 {
-    "name": "version_1",
-    "short_name": "version_1",
+    "name": "NTHU CourseFinder",
+    "short_name": "NTHU CourseFinder",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#hexcode",
