@@ -1,7 +1,7 @@
 {
   "success": "成功",
-  "tab404": "無此頁面",
-  "tab404GoHome": "回首頁",
+  "tab404": "查無此頁",
+  "tab404GoHome": "回到首頁",
   "tabLogin": "登入",
   "tabHome": "AlphaFold",
   "tabContact": "聯絡資訊",
