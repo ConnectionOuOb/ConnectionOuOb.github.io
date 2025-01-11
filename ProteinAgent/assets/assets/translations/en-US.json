@@ -24,6 +24,7 @@
   "session_status": "Status",
   "session_created": "Created At",
   "session_finished": "Finished At",
+  "session_version": "Version",
   "session_sequence": "Sequence",
   "session_run_time": "Run Time",
   "session_result": "Result",

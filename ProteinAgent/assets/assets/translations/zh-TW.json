@@ -24,6 +24,7 @@
   "session_status": "狀態",
   "session_created": "建立時間",
   "session_finished": "完成時間",
+  "session_version": "使用版本",
   "session_sequence": "序列",
   "session_run_time": "已執行時長",
   "session_result": "結果",
