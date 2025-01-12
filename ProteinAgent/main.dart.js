@@ -88390,9 +88390,7 @@ A.aeq.prototype={
 $2(a,b){return this.WT(a,b)},
 WT(a,b){var s=0,r=A.O(t.ob),q
 var $async$$2=A.P(function(c,d){if(c===1)return A.L(d,r)
-while(true)switch(s){case 0:if(b.f==="login"){q=null
-s=1
-break}s=3
+while(true)switch(s){case 0:s=3
 return A.R(A.atB(),$async$$2)
 case 3:if(!d){q="/login"
 s=1
