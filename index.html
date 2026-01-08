@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectionOuOb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0d1117;
+            --bg-card: #161b22;
+            --border: #30363d;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+            --accent-hover: #79b8ff;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 3rem 1.5rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .grid {
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        a.card {
+            display: block;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: border-color 0.2s, transform 0.15s;
+        }
+
+        a.card:hover {
+            border-color: var(--accent);
+            transform: translateX(4px);
+        }
+
+        .card-title {
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>ConnectionOuOb</h1>
+            <p class="subtitle">Side Projects & Works</p>
+        </header>
+
+        <section>
+            <h2>個人專案</h2>
+            <div class="grid">
+                <a class="card" href="./FlutterMol/">
+                    <span class="card-title">Flutter Molecule</span>
+                </a>
+                <a class="card" href="./resume-generator/">
+                    <span class="card-title">Resume Generator</span>
+                </a>
+                <a class="card" href="./ProteinAgent/">
+                    <span class="card-title">Protein Agent</span>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>競賽作品</h2>
+            <div class="grid">
+                <a class="card" href="./NTHU-CourseFinder/">
+                    <span class="card-title">NTHU Course Finder</span>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <a href="https://github.com/ConnectionOuOb" target="_blank">GitHub</a>
+        </footer>
+    </div>
+</body>
+
+</html>
