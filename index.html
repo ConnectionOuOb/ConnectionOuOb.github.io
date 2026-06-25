@@ -1,152 +1,389 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW" data-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConnectionOuOb</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bg-primary: #0d1117;
-            --bg-card: #161b22;
-            --border: #30363d;
-            --text-primary: #e6edf3;
-            --text-secondary: #8b949e;
-            --accent: #58a6ff;
-            --accent-hover: #79b8ff;
-        }
-
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            min-height: 100vh;
-            padding: 3rem 1.5rem;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            letter-spacing: 0.5px;
-        }
-
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        section {
-            margin-bottom: 2.5rem;
-        }
-
-        h2 {
-            font-size: 1rem;
-            font-weight: 500;
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .grid {
-            display: grid;
-            gap: 0.75rem;
-        }
-
-        a.card {
-            display: block;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1rem 1.25rem;
-            text-decoration: none;
-            color: var(--text-primary);
-            transition: border-color 0.2s, transform 0.15s;
-        }
-
-        a.card:hover {
-            border-color: var(--accent);
-            transform: translateX(4px);
-        }
-
-        .card-title {
-            font-weight: 500;
-            color: var(--accent);
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 4rem;
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-        }
-
-        footer a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connection Lee 的個人專案展示 — 分子視覺化、經典圖譜、工具與競賽作品">
+  <title>ConnectionOuOb — Side Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>ConnectionOuOb</h1>
-            <p class="subtitle">Side Projects & Works</p>
-        </header>
+  <div class="page-backdrop" aria-hidden="true"></div>
+  <div class="ambient-orb ambient-orb--one" aria-hidden="true"></div>
+  <div class="ambient-orb ambient-orb--two" aria-hidden="true"></div>
 
-        <section>
-            <h2>個人專案</h2>
-            <div class="grid">
-                <a class="card" href="./FlutterMol/">
-                    <span class="card-title">Flutter Molecule</span>
-                </a>
-                <a class="card" href="./resume-generator/">
-                    <span class="card-title">Resume Generator</span>
-                </a>
-                <a class="card" href="./ProteinAgent/">
-                    <span class="card-title">Protein Agent</span>
-                </a>
-            </div>
+  <div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
+
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand glass-panel">
+        <div class="brand__avatar" aria-hidden="true">C</div>
+        <h1 class="brand__name">Connection Lee</h1>
+        <p class="brand__tagline">NYCU DBT → NYCU IBSB<br>Lionic Corp. · Hsinchu</p>
+      </div>
+
+      <nav class="nav-tabs glass-panel" role="tablist" aria-label="專案分類">
+        <button class="nav-tab is-active" role="tab" data-tab="personal" aria-selected="true">
+          <span class="nav-tab__icon" aria-hidden="true">⚗️</span>
+          個人專案
+        </button>
+        <button class="nav-tab" role="tab" data-tab="classics" aria-selected="false">
+          <span class="nav-tab__icon" aria-hidden="true">📜</span>
+          經典圖譜
+        </button>
+        <button class="nav-tab" role="tab" data-tab="tools" aria-selected="false">
+          <span class="nav-tab__icon" aria-hidden="true">🔬</span>
+          工具與研究
+        </button>
+        <button class="nav-tab" role="tab" data-tab="competition" aria-selected="false">
+          <span class="nav-tab__icon" aria-hidden="true">🏆</span>
+          競賽作品
+        </button>
+        <button class="nav-tab" role="tab" data-tab="links" aria-selected="false">
+          <span class="nav-tab__icon" aria-hidden="true">🔗</span>
+          外部連結
+        </button>
+      </nav>
+
+      <div class="sidebar-footer glass-panel">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="切換至亮色模式">
+          <span>光暗模式</span>
+          <span class="theme-toggle__track" aria-hidden="true">
+            <span class="theme-toggle__thumb"></span>
+          </span>
+        </button>
+        <a class="sidebar-link" href="https://github.com/ConnectionOuOb" target="_blank" rel="noopener">GitHub Profile</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="main-header glass-panel">
+        <p class="main-header__eyebrow" id="panel-eyebrow">Projects</p>
+        <h2 class="main-header__title" id="panel-title">個人專案</h2>
+        <p class="main-header__desc" id="panel-desc">分子視覺化、履歷生成、蛋白質代理等原創應用與工具。</p>
+      </header>
+
+      <div class="tab-panels">
+        <!-- 個人專案 -->
+        <section class="tab-panel is-active" data-panel="personal" role="tabpanel">
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">Flutter Molecule</h3>
+                <span class="project-card__lang">Dart</span>
+              </div>
+              <p class="project-card__desc">以 Flutter 打造的蛋白質／分子結構 3D 檢視器。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/FlutterMol" target="_blank" rel="noopener">GitHub</a>
+                <a class="chip" href="./FlutterMol/">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">Resume Generator</h3>
+                <span class="project-card__lang">JS</span>
+              </div>
+              <p class="project-card__desc">自動化生成履歷的 Web 工具。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/Resume_Generator" target="_blank" rel="noopener">GitHub</a>
+                <a class="chip" href="./resume-generator/">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">Protein Agent</h3>
+                <span class="project-card__lang">Flutter</span>
+              </div>
+              <p class="project-card__desc">蛋白質結構分析與互動代理應用。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/ProteinAgent" target="_blank" rel="noopener">GitHub</a>
+                <a class="chip" href="./ProteinAgent/">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">Github Profile</h3>
+                <span class="project-card__lang">TS</span>
+              </div>
+              <p class="project-card__desc">GitHub Profile Card 生成器，支援語言圖示與統計。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/GithubProfile" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">Blank App Codebase</h3>
+                <span class="project-card__lang">Go + Flutter</span>
+              </div>
+              <p class="project-card__desc">基於 Golang 後端與 Flutter 前端的應用開發骨架。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/Blank-App-Codebase" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">Video Tool</h3>
+                <span class="project-card__lang">Dart</span>
+              </div>
+              <p class="project-card__desc">基於 FFMPEG 的影片剪輯 GUI 工具。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/Video-Tool" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+          </div>
         </section>
 
-        <section>
-            <h2>競賽作品</h2>
-            <div class="grid">
-                <a class="card" href="./NTHU-CourseFinder/">
-                    <span class="card-title">NTHU Course Finder</span>
-                </a>
-            </div>
+        <!-- 經典圖譜 -->
+        <section class="tab-panel" data-panel="classics" role="tabpanel" hidden>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">莊子通覽圖</h3>
+                <span class="project-card__lang">Dart</span>
+              </div>
+              <p class="project-card__desc">莊子篇章互動圖譜導覽。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/Zhuangzi" target="_blank" rel="noopener">GitHub</a>
+                <a class="chip" href="./zhuangzi/">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">易方陣</h3>
+                <span class="project-card__lang">Dart</span>
+              </div>
+              <p class="project-card__desc">易經方陣互動視覺化。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/YiFangJhen" target="_blank" rel="noopener">GitHub</a>
+                <a class="chip" href="./YiFangJhen/">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">道德經通覽圖</h3>
+                <span class="project-card__lang">C++</span>
+              </div>
+              <p class="project-card__desc">老子道德經全文圖譜導覽。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/Laozi" target="_blank" rel="noopener">GitHub</a>
+                <a class="chip" href="./Laozi/">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">論語全覽圖</h3>
+                <span class="project-card__lang">C++</span>
+              </div>
+              <p class="project-card__desc">論語篇章結構互動地圖。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/TheAnalects" target="_blank" rel="noopener">GitHub</a>
+                <a class="chip" href="./TheAnalects/">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">孟子全覽圖</h3>
+                <span class="project-card__lang">C++</span>
+              </div>
+              <p class="project-card__desc">孟子思想篇章圖譜。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/Mencius" target="_blank" rel="noopener">GitHub</a>
+                <a class="chip" href="./Mencius/">Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">茶、易經</h3>
+                <span class="project-card__lang">Dart</span>
+              </div>
+              <p class="project-card__desc">茶文化與易經卦象的互動體驗。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/TeaHexagram" target="_blank" rel="noopener">GitHub</a>
+                <a class="chip" href="./TeaHexagram/">Demo</a>
+              </div>
+            </article>
+          </div>
         </section>
 
-        <footer>
-            <a href="https://github.com/ConnectionOuOb" target="_blank">GitHub</a>
-        </footer>
-    </div>
+        <!-- 工具與研究 -->
+        <section class="tab-panel" data-panel="tools" role="tabpanel" hidden>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">Text Classifier</h3>
+                <span class="project-card__lang">Python</span>
+              </div>
+              <p class="project-card__desc">NLP 文字分類器實驗專案。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/Text_Classifier" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">ScanUbuntu</h3>
+                <span class="project-card__lang">Shell</span>
+              </div>
+              <p class="project-card__desc">Ubuntu 伺服器安全掃描與防護工具。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/ScanUbuntu" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">Translation Server</h3>
+                <span class="project-card__lang">Python</span>
+              </div>
+              <p class="project-card__desc">基於 NLLB-200 的 FastAPI 翻譯服務。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/TranslationServer" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">Random String Detection</h3>
+                <span class="project-card__lang">Python</span>
+              </div>
+              <p class="project-card__desc">LLM tokenizer 隨機字串偵測研究。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/RandomStringDetection" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">PDF Viewer</h3>
+                <span class="project-card__lang">C++</span>
+              </div>
+              <p class="project-card__desc">輕量 PDF 檢視器。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/PDF_Viewer" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">Exchange Rate Bot</h3>
+                <span class="project-card__lang">Python</span>
+              </div>
+              <p class="project-card__desc">匯率查詢機器人。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/ExchangeRateBot" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">gRPC Golang-Python</h3>
+                <span class="project-card__lang">Python</span>
+              </div>
+              <p class="project-card__desc">Golang 與 Python 之間的 gRPC 通訊範例。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/gRPC_Golang-Python" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">Share Notebook</h3>
+                <span class="project-card__lang">Notes</span>
+              </div>
+              <p class="project-card__desc">個人學習筆記與知識分享。</p>
+              <div class="project-card__links">
+                <a class="chip" href="https://github.com/ConnectionOuOb/Share-Notebook" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 競賽作品 -->
+        <section class="tab-panel" data-panel="competition" role="tabpanel" hidden>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-card__top">
+                <h3 class="project-card__title">NTHU Course Finder</h3>
+                <span class="project-card__lang">Flutter</span>
+              </div>
+              <p class="project-card__desc">清大 Campus as a Living Lab (CLL) 競賽作品 — 課程探索與規劃工具。</p>
+              <div class="project-card__links">
+                <span class="chip chip--muted">原始碼不公開</span>
+                <a class="chip" href="./NTHU-CourseFinder/">Demo</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 外部連結 -->
+        <section class="tab-panel" data-panel="links" role="tabpanel" hidden>
+          <div class="link-list">
+            <a class="link-item" href="https://github.com/ConnectionOuOb" target="_blank" rel="noopener">
+              <span class="link-item__icon" aria-hidden="true">🐙</span>
+              <div class="link-item__text">
+                <p class="link-item__title">GitHub</p>
+                <p class="link-item__desc">@ConnectionOuOb — 41 repos</p>
+              </div>
+            </a>
+            <a class="link-item" href="https://buymeacoffee.com/connection" target="_blank" rel="noopener">
+              <span class="link-item__icon" aria-hidden="true">☕</span>
+              <div class="link-item__text">
+                <p class="link-item__title">Buy Me a Coffee</p>
+                <p class="link-item__desc">支持開源與創作</p>
+              </div>
+            </a>
+            <a class="link-item" href="https://github.com/ConGaAI" target="_blank" rel="noopener">
+              <span class="link-item__icon" aria-hidden="true">🤖</span>
+              <div class="link-item__text">
+                <p class="link-item__title">ConGaAI</p>
+                <p class="link-item__desc">AI 相關開源組織</p>
+              </div>
+            </a>
+            <a class="link-item" href="https://github.com/NYCU-10lab" target="_blank" rel="noopener">
+              <span class="link-item__icon" aria-hidden="true">🧪</span>
+              <div class="link-item__text">
+                <p class="link-item__title">NYCU-10lab</p>
+                <p class="link-item__desc">陽明交大實驗室組織</p>
+              </div>
+            </a>
+            <a class="link-item" href="https://nycu-esports.blogspot.com/" target="_blank" rel="noopener">
+              <span class="link-item__icon" aria-hidden="true">🎮</span>
+              <div class="link-item__text">
+                <p class="link-item__title">陽明交大電競社</p>
+                <p class="link-item__desc">NYCU Esports 官方部落格</p>
+              </div>
+            </a>
+            <a class="link-item" href="https://nycu-tce.github.io/" target="_blank" rel="noopener">
+              <span class="link-item__icon" aria-hidden="true">📚</span>
+              <div class="link-item__text">
+                <p class="link-item__title">NYCU-TCE</p>
+                <p class="link-item__desc">委託教材與教學資源</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <button class="menu-toggle glass-panel" id="menu-toggle" type="button" aria-label="開啟選單">☰</button>
+
+  <script src="./assets/app.js" defer></script>
 </body>
 
 </html>
